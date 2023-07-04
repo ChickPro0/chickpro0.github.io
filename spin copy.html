@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 80%;
+            height: 700px;
+            margin: 0 auto;
+            background: transparent;
+            position: absolute;
+            top: 200px;
+            left: 150px;
+        }
+
+        #c2 {
+            left: -350px;
+        }
+
+        #c3 {
+            right: -770px;
+        }
+        .black {
+            width: 100px;
+            height: 400px;
+            background: black;
+            border-radius: 25px;
+            position: absolute;
+            left: 50%;
+            top: 10%;
+        }
+
+        #b1 {
+            transform: rotate(120deg);
+            
+        }
+
+        #b2 {
+            z-index: 2;
+        }
+
+        #b3 {
+            transform: rotate(240deg);
+            
+        }
+
+        .circle {
+            width: 80px;
+            height: 80px;
+            left: 10px;
+            border-radius: 50%;
+            position: absolute;
+        }
+
+        .left {
+            top: 10px;
+            background: white;
+        }
+
+        .right {
+            bottom: 10px;
+            background: blue;
+        }
+
+        @keyframes rotate_image{
+            100% {
+                transform: rotate(1200deg);
+            }
+        }
+
+        @keyframes rotate_image2{
+            100% {
+                transform: rotate(1080deg);
+            }
+        }
+
+        @keyframes rotate_image3{
+            100% {
+                transform: rotate(1320deg);
+            }
+        }
+
+        #button {
+            width: 200px;
+            height: 200px;
+            background: gray;
+        }
+        .spin {
+            animation: rotate_image 100ms ease infinite;
+        }
+        .spin2 {
+            animation: rotate_image2 100ms ease infinite;
+        }
+        .spin3 {
+            animation: rotate_image3 100ms ease infinite;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container" id="c1">
+        <div class="black spin" id="b1">
+            <div class="circle left" style="background:yellow"></div>
+            <div class="circle right" style="background:red"></div>
+        </div>
+        <div class="black spin2" id="b2">
+            <div class="circle left" style="background:green"></div>
+            <div class="circle right"style="background:orange"></div>
+        </div>
+        <div class="black spin3" id="b3">
+            <div class="circle left"></div>
+            <div class="circle right"></div>
+        </div>
+    </div>
+
+    <div class="container" id="c2">
+        <div class="black spin" id="b1">
+            <div class="circle left" style="background:yellow"></div>
+            <div class="circle right" style="background:red"></div>
+        </div>
+        <div class="black spin2" id="b2">
+            <div class="circle left" style="background:green"></div>
+            <div class="circle right"style="background:orange"></div>
+        </div>
+        <div class="black spin3" id="b3">
+            <div class="circle left"></div>
+            <div class="circle right"></div>
+        </div>
+    </div>
+
+    <div class="container" id="c3">
+        <div class="black spin" id="b1">
+            <div class="circle left" style="background:yellow"></div>
+            <div class="circle right" style="background:red"></div>
+        </div>
+        <div class="black spin2" id="b2">
+            <div class="circle left" style="background:green"></div>
+            <div class="circle right"style="background:orange"></div>
+        </div>
+        <div class="black spin3" id="b3">
+            <div class="circle left"></div>
+            <div class="circle right"></div>
+        </div>
+    </div>
+
+    <script>
+        
+    </script>
+    
+</body>
+</html>
